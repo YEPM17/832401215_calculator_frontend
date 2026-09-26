@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = dirname(fileURLToPath(import.meta.url));
 const port = Number.parseInt(process.env.PORT || '5500', 10);
+const host = process.env.HOST || '127.0.0.1';
 const contentTypes = {
   '.css': 'text/css; charset=utf-8',
   '.html': 'text/html; charset=utf-8',
@@ -38,6 +39,6 @@ const server = createServer(async (request, response) => {
   }
 });
 
-server.listen(port, '127.0.0.1', () => {
-  console.log(`Frontend available at http://127.0.0.1:${port}`);
+server.listen(port, host, () => {
+  console.log(`Frontend available at http://${host}:${port}`);
 });

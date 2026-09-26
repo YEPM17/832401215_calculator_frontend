@@ -55,13 +55,13 @@ npm run screenshots
 - 前端：`http://127.0.0.1:5500`
 - 后端：`http://127.0.0.1:8765`
 
-Vercel 部署版本通过 `js/config.js` 连接 Railway 后端 `https://832401215-calculator-backend-production.up.railway.app`。
+Railway 部署版本通过 `js/config.js` 连接 Railway 后端 `https://832401215-calculator-backend-production.up.railway.app`。
 
 ## 目录
 
 - `js/api.js`：HTTP 请求封装
 - `js/app.js`：页面状态和交互
 - `js/config.js`：后端地址配置
-- `server.mjs`：零依赖本地静态服务器
+- `server.mjs`：零依赖本地和容器静态服务器
 - `css/styles.css`：响应式页面样式
 - `tests/`：前端自动化测试
