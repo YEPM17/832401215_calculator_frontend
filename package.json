@@ -1,0 +1,13 @@
+{
+  "name": "832401215-calculator-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npx serve .",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "playwright": "1.55.0"
+  }
+}
