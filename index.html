@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="832401215 前后端分离计算器">
+  <title>分离式计算器</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">832401215 · CALCULATOR</p>
+        <h1>计算器</h1>
+      </div>
+      <span id="status" class="status status--loading">Connecting</span>
+    </header>
+
+    <section class="workspace">
+      <form class="calculator-panel" id="calculator-form">
+        <label class="field-label" for="expression">Expression</label>
+        <input id="expression" name="expression" type="text" inputmode="text"
+          autocomplete="off" placeholder="例如 (1+2)*3">
+        <div class="output-row">
+          <span class="output-label">Result</span>
+          <output id="result" aria-live="polite"></output>
+        </div>
+        <p id="error" class="error-message" role="alert"></p>
+
+        <div class="keypad" aria-label="计算键盘">
+          <button type="button" class="key key--utility" data-action="clear">C</button>
+          <button type="button" class="key key--utility" data-action="backspace">⌫</button>
+          <button type="button" class="key" data-token="(">(</button>
+          <button type="button" class="key" data-token=")">)</button>
+          <button type="button" class="key" data-token="7">7</button>
+          <button type="button" class="key" data-token="8">8</button>
+          <button type="button" class="key" data-token="9">9</button>
+          <button type="button" class="key key--operator" data-token="÷">÷</button>
+          <button type="button" class="key" data-token="4">4</button>
+          <button type="button" class="key" data-token="5">5</button>
+          <button type="button" class="key" data-token="6">6</button>
+          <button type="button" class="key key--operator" data-token="×">×</button>
+          <button type="button" class="key" data-token="1">1</button>
+          <button type="button" class="key" data-token="2">2</button>
+          <button type="button" class="key" data-token="3">3</button>
+          <button type="button" class="key key--operator" data-token="−">−</button>
+          <button type="button" class="key key--wide" data-token="0">0</button>
+          <button type="button" class="key" data-token=".">.</button>
+          <button type="button" class="key key--operator" data-token="+">+</button>
+          <button id="calculate" type="submit" class="key key--equals">=</button>
+        </div>
+      </form>
+
+      <section class="history-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">DATABASE</p>
+            <h2>History</h2>
+          </div>
+          <button type="button" class="text-button" id="refresh-history">Refresh</button>
+        </div>
+        <div id="history-list" class="history-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="./js/config.js"></script>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
