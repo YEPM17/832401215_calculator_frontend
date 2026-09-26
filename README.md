@@ -57,6 +57,9 @@ npm run screenshots
 
 Railway 部署版本通过 `js/config.js` 连接 Railway 后端 `https://832401215-calculator-backend-production.up.railway.app`。
 
+- 前端地址：https://832401215calculatorfrontend-production.up.railway.app/
+- 后端地址：https://832401215-calculator-backend-production.up.railway.app/
+
 ## 目录
 
 - `js/api.js`：HTTP 请求封装
