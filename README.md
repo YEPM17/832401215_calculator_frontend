@@ -37,6 +37,17 @@ npm start
 npm test
 ```
 
+## 生成演示截图
+
+前后端均已启动时运行：
+
+```powershell
+npx playwright install chromium
+npm run screenshots
+```
+
+截图输出到工作区根目录 `docs/screenshots/`。
+
 ## 后端对接
 
 浏览器直接请求后端，跨域访问由后端 `CORS_ORIGINS` 控制。本地默认使用：
