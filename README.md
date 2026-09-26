@@ -55,7 +55,7 @@ npm run screenshots
 - 前端：`http://127.0.0.1:5500`
 - 后端：`http://127.0.0.1:8765`
 
-部署到 Vercel 后，将 `js/config.js` 中的地址改为后端公网 URL。
+Vercel 部署版本通过 `js/config.js` 连接 Railway 后端 `https://832401215-calculator-backend-production.up.railway.app`。
 
 ## 目录
 

@@ -1,1 +1,1 @@
-globalThis.CALCULATOR_API_BASE_URL = 'http://127.0.0.1:8765';
+globalThis.CALCULATOR_API_BASE_URL = 'https://832401215-calculator-backend-production.up.railway.app';
